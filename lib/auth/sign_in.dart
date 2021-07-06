@@ -2,8 +2,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
+import 'package:foodtest0/provider/user_provider.dart';
 import 'package:foodtest0/screens/home_screen/home.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:provider/provider.dart';
 
 class SignIN extends StatefulWidget {
   const SignIN({Key? key}) : super(key: key);
@@ -13,6 +15,8 @@ class SignIN extends StatefulWidget {
 }
 
 class _SignINState extends State<SignIN> {
+
+  late UserProvider userProvider;
 
   Future _googleSignUp() async {
     try {
@@ -30,14 +34,14 @@ class _SignINState extends State<SignIN> {
         idToken: googleAuth.idToken,
       );
 
-      final User? user = (await _auth.signInWithCredential(credential)).user;
-      print("signed in ");
-      // userProvider.addUserData(
-      //   currentUser: user,
-      //   userEmail: user.email,
-      //   userImage: user.photoURL,
-      //   userName: user.displayName,
-      //);
+      final User user = (await _auth.signInWithCredential(credential)).user!;
+     // print("signed in ");
+      userProvider.addUserData(
+        currentUser: user,
+        userEmail: user.email!,
+        userImage: user.photoURL!,
+        userName: user.displayName!,
+      );
        return user;
     } catch (e) {
       print('Catch Message:$e');
@@ -46,6 +50,7 @@ class _SignINState extends State<SignIN> {
 
   @override
   Widget build(BuildContext context) {
+    userProvider = Provider.of<UserProvider>(context);
     return Scaffold(
       body: Container(
         height: double.infinity,
@@ -67,7 +72,7 @@ class _SignINState extends State<SignIN> {
                 children: [
                   Text('Sign in to continue'),
                   Text(
-                    'Vegi',
+                    'Vegetables',
                     style: TextStyle(
                       fontSize: 50,
                       color: Colors.white,
@@ -90,8 +95,8 @@ class _SignINState extends State<SignIN> {
                       SignInButton(
                         Buttons.Google,
                         text: "Sign up with Google",
-                        onPressed: () {
-                          _googleSignUp().then(
+                        onPressed: () async {
+                         await _googleSignUp().then(
                             (value) => Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
                                 builder: (context) => HomeScreen(),
