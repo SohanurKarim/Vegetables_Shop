@@ -73,7 +73,7 @@ class Myprofile extends StatelessWidget {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      SizedBox(height: 2,),
+                                      SizedBox(height: 10,),
                                       Text(
                                         "Md. Sohanru Karim",
                                         style: TextStyle(
@@ -103,6 +103,7 @@ class Myprofile extends StatelessWidget {
                             ),
                           ],
                         ),
+                        SizedBox(height: 2,),
                         listTile(
                             icon: Icons.shop_outlined,
                             title: "My Orders"
@@ -110,6 +111,10 @@ class Myprofile extends StatelessWidget {
                         listTile(
                             icon: Icons.location_on_outlined,
                             title: "My Delivery Address"
+                        ),
+                        listTile(
+                            icon: Icons.person_outlined,
+                            title: "Refer a Friend"
                         ),
                         listTile(
                             icon: Icons.person_outlined,

@@ -138,7 +138,7 @@ class DrwerSide extends StatelessWidget {
               onTap: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
-                    builder: (context) => WishListProduct(),
+                    builder: (context) => WishList(),
                   ),
                 );
               },

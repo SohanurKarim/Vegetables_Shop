@@ -1,14 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:foodtest0/config/color.dart';
+import 'package:foodtest0/models/product_models.dart';
 import 'package:foodtest0/models/review_cart_model.dart';
 import 'package:foodtest0/provider/review_cart_provider.dart';
+import 'package:foodtest0/provider/wish_list_provider.dart';
 import 'package:foodtest0/widget/single_item.dart';
 import 'package:provider/provider.dart';
 
-class WishListProduct extends StatelessWidget {
+class WishList extends StatefulWidget {
 //  const ReviewCart({Key? key}) : super(key: key);
-  late ReviewCartProvider reviewCartProvider;
-  showAlertDialog(BuildContext context,ReviewCartModel delete) {
+
+
+  @override
+  _WishListState createState() => _WishListState();
+}
+
+class _WishListState extends State<WishList> {
+
+  late WishListProvider wishListProvider;
+
+  showAlertDialog(BuildContext context,ProductModel delete) {
 
     // set up the buttons
     Widget cancelButton = FlatButton(
@@ -30,15 +41,15 @@ class WishListProduct extends StatelessWidget {
         ),
       ),
       onPressed:  () {
-        reviewCartProvider.reviewCartDataDelete(delete.cartID);
+        wishListProvider.deleteWishList(delete.productId);
         Navigator.of(context).pop();
       },
     );
 
     // set up the AlertDialog
     AlertDialog alert = AlertDialog(
-      title: Text("WishList Product"),
-      content: Text("Are you want to delete?"),
+      title: Text("Confirm"),
+      content: Text("Are you delete WishList Product ?"),
       actions: [
         cancelButton,
         continueButton,
@@ -54,43 +65,39 @@ class WishListProduct extends StatelessWidget {
     );
   }
 
-
   @override
   Widget build(BuildContext context) {
-
-    reviewCartProvider = Provider.of(context);
-    reviewCartProvider.getReviewCartData();
-
+    wishListProvider = Provider.of(context);
+    wishListProvider.getWishListData();
     return Scaffold(
       appBar: AppBar(
         backgroundColor: primaryColor,
         iconTheme: IconThemeData(color: textColor),
         title: Text(
-          "Wishlist Product",
+          "WishList",
           style: TextStyle(
             color: textColor,
             fontSize: 18,
           ),
         ),
       ),
-      body:reviewCartProvider.getReviewCartDataList.isEmpty?Center(
-        child: Text("No Data"),
-      ):ListView.builder(
-        itemCount: reviewCartProvider.getReviewCartDataList.length,
+      body:ListView.builder(
+        itemCount: wishListProvider.getWishList.length,
         itemBuilder: (context,index) {
-          ReviewCartModel data = reviewCartProvider.getReviewCartDataList[index];
+          ProductModel data = wishListProvider.getWishList[index];
           return Column(
             children: [
               SizedBox(height: 10,),
               SingleItem(
                 isBool:true,
-                productImage: data.cartImage,
-                productName: data.cartName,
-                productPrice: data.cartPrice,
-                productId: data.cartID,
-                productQuantity: data.cartQuantity,
+                wishLIst: true,
+                productImage: data.productImage,
+                productName: data.productName,
+                productPrice: data.productPrice,
+                productId: data.productId,
+                productQuantity:2,
                 onDelete:(){
-                  showAlertDialog(context,data);
+                  showAlertDialog(context, data);
                 },
               ),
               // SizedBox(height: 10,),

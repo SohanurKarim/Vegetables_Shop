@@ -6,6 +6,7 @@ class SingleItem extends StatelessWidget {
   // const SingleItem({Key? key}) : super(key: key);
 
   bool isBool = false;
+  bool wishLIst = false;
   String productImage;
   String productName;
   String productId;
@@ -15,6 +16,7 @@ class SingleItem extends StatelessWidget {
 
   SingleItem({
     required this.isBool,
+    required this.wishLIst,
     required this.productImage,
     required this.productName,
     required this.productPrice,
@@ -151,7 +153,8 @@ class SingleItem extends StatelessWidget {
                         SizedBox(
                           height: 5,
                         ),
-                        Padding(
+                        wishLIst == false
+                        ? Padding(
                           padding: const EdgeInsets.only(top: 8),
                           child: Container(
                             height: 25,
@@ -184,7 +187,7 @@ class SingleItem extends StatelessWidget {
                               ),
                             ),
                           ),
-                        )
+                        ):Container(),
                     ],
                   ),
                       ),

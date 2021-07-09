@@ -82,6 +82,7 @@ class _SearchState extends State<Search> {
             children: _searchItem.map((data){
               return SingleItem(
                 isBool: false,
+                wishLIst: false,
                 productImage: data.productImage,
                 productName: data.productName,
                 productPrice: data.productPrice,

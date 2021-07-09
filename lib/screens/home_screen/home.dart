@@ -217,78 +217,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   },
             )
              .toList(),
-            // children: [
-            //   SingleProduct(
-            //       productImage: 'https://img2.pngio.com/basil-transparent-png-stickpng-sweet-basil-png-400_378.png',
-            //       productName: "Fresh Basli",
-            //       onTap: (){
-            //         Navigator.of(context).push(
-            //           MaterialPageRoute(
-            //               builder:(context) => ProductOverview(
-            //                 productName: "Fresh Basli",
-            //                 productImage: "https://img2.pngio.com/basil-transparent-png-stickpng-sweet-basil-png-400_378.png",
-            //               ),
-            //           )
-            //         );
-            //       },
-            //   ),
-            //   SingleProduct(
-            //     productImage: 'https://www.freepnglogos.com/uploads/broccoli-png/broccoli-organic-live-and-crops-owners-association-nigeria-26.png',
-            //     productName: "Fresh Borkli",
-            //     onTap: (){
-            //       Navigator.of(context).push(
-            //           MaterialPageRoute(
-            //             builder:(context) => ProductOverview(
-            //               productName: "Fresh Borkli",
-            //               productImage: 'https://www.freepnglogos.com/uploads/broccoli-png/broccoli-organic-live-and-crops-owners-association-nigeria-26.png',
-            //             ),
-            //           )
-            //       );
-            //     },
-            //   ),
-            //   SingleProduct(
-            //     productImage: 'https://freepngimg.com/thumb/categories/2972.png',
-            //     productName: "Fresh Coli-Flower",
-            //     onTap: (){
-            //       Navigator.of(context).push(
-            //           MaterialPageRoute(
-            //             builder:(context) => ProductOverview(
-            //               productImage: 'https://freepngimg.com/thumb/categories/2972.png',
-            //               productName: "Fresh Coli-Flower",
-            //             ),
-            //           )
-            //       );
-            //     },
-            //   ),
-            //   SingleProduct(
-            //     productImage: 'https://img2.pngio.com/basil-transparent-png-stickpng-sweet-basil-png-400_378.png',
-            //     productName: "Fresh Basli",
-            //     onTap: (){
-            //       Navigator.of(context).push(
-            //           MaterialPageRoute(
-            //             builder:(context) => ProductOverview(
-            //               productName: "Fresh Basli",
-            //               productImage: "https://img2.pngio.com/basil-transparent-png-stickpng-sweet-basil-png-400_378.png",
-            //             ),
-            //           )
-            //       );
-            //     },
-            //   ),
-            //   SingleProduct(
-            //     productImage: 'https://www.freepnglogos.com/uploads/broccoli-png/broccoli-organic-live-and-crops-owners-association-nigeria-26.png',
-            //     productName: "Fresh Borkli",
-            //     onTap: (){
-            //       Navigator.of(context).push(
-            //           MaterialPageRoute(
-            //             builder:(context) => ProductOverview(
-            //               productName: "Fresh Borkli",
-            //               productImage: 'https://www.freepnglogos.com/uploads/broccoli-png/broccoli-organic-live-and-crops-owners-association-nigeria-26.png',
-            //             ),
-            //           )
-            //       );
-            //     },
-            //   ),
-            // ],
           ),
         ),
       ],
@@ -366,158 +294,9 @@ class _HomeScreenState extends State<HomeScreen> {
               },
             )
               .toList(),
-            // children: [
-            //   SingleProduct(
-            //       productImage: 'https://img2.pngio.com/basil-transparent-png-stickpng-sweet-basil-png-400_378.png',
-            //       productName: "Fresh Basli",
-            //       onTap: (){
-            //         Navigator.of(context).push(
-            //           MaterialPageRoute(
-            //               builder:(context) => ProductOverview(
-            //                 productName: "Fresh Basli",
-            //                 productImage: "https://img2.pngio.com/basil-transparent-png-stickpng-sweet-basil-png-400_378.png",
-            //               ),
-            //           )
-            //         );
-            //       },
-            //   ),
-            //   SingleProduct(
-            //     productImage: 'https://www.freepnglogos.com/uploads/broccoli-png/broccoli-organic-live-and-crops-owners-association-nigeria-26.png',
-            //     productName: "Fresh Borkli",
-            //     onTap: (){
-            //       Navigator.of(context).push(
-            //           MaterialPageRoute(
-            //             builder:(context) => ProductOverview(
-            //               productName: "Fresh Borkli",
-            //               productImage: 'https://www.freepnglogos.com/uploads/broccoli-png/broccoli-organic-live-and-crops-owners-association-nigeria-26.png',
-            //             ),
-            //           )
-            //       );
-            //     },
-            //   ),
-            //   SingleProduct(
-            //     productImage: 'https://freepngimg.com/thumb/categories/2972.png',
-            //     productName: "Fresh Coli-Flower",
-            //     onTap: (){
-            //       Navigator.of(context).push(
-            //           MaterialPageRoute(
-            //             builder:(context) => ProductOverview(
-            //               productImage: 'https://freepngimg.com/thumb/categories/2972.png',
-            //               productName: "Fresh Coli-Flower",
-            //             ),
-            //           )
-            //       );
-            //     },
-            //   ),
-            //   SingleProduct(
-            //     productImage: 'https://img2.pngio.com/basil-transparent-png-stickpng-sweet-basil-png-400_378.png',
-            //     productName: "Fresh Basli",
-            //     onTap: (){
-            //       Navigator.of(context).push(
-            //           MaterialPageRoute(
-            //             builder:(context) => ProductOverview(
-            //               productName: "Fresh Basli",
-            //               productImage: "https://img2.pngio.com/basil-transparent-png-stickpng-sweet-basil-png-400_378.png",
-            //             ),
-            //           )
-            //       );
-            //     },
-            //   ),
-            //   SingleProduct(
-            //     productImage: 'https://www.freepnglogos.com/uploads/broccoli-png/broccoli-organic-live-and-crops-owners-association-nigeria-26.png',
-            //     productName: "Fresh Borkli",
-            //     onTap: (){
-            //       Navigator.of(context).push(
-            //           MaterialPageRoute(
-            //             builder:(context) => ProductOverview(
-            //               productName: "Fresh Borkli",
-            //               productImage: 'https://www.freepnglogos.com/uploads/broccoli-png/broccoli-organic-live-and-crops-owners-association-nigeria-26.png',
-            //             ),
-            //           )
-            //       );
-            //     },
-            //   ),
-            // ],
+
           ),
         ),
-        // SingleChildScrollView(
-        //   scrollDirection: Axis.horizontal,
-        //   child: Row(
-        //     children: [
-        //       // SingleProduct(
-        //       //   productImage: 'http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c12c.png',
-        //       //   productName: "Fresh Guava",
-        //       //   onTap: (){
-        //       //     Navigator.of(context).push(
-        //       //         MaterialPageRoute(
-        //       //           builder:(context) => ProductOverview(
-        //       //                 productImage: 'http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c12c.png',
-        //       //                 productName: "Fresh Guava",
-        //       //           ),
-        //       //         ),
-        //       //     );
-        //       //   },
-        //       // ),
-        //       // SingleProduct(
-        //       //   productImage: 'https://www.searchpng.com/wp-content/uploads/2018/12/Orange-Fruit-PNG-Images.png',
-        //       //   productName: "Fresh Orange",
-        //       //   onTap: (){
-        //       //     Navigator.of(context).push(
-        //       //         MaterialPageRoute(
-        //       //           builder:(context) => ProductOverview(
-        //       //             productImage: 'https://www.searchpng.com/wp-content/uploads/2018/12/Orange-Fruit-PNG-Images.png',
-        //       //             productName: "Fresh Orange",
-        //       //           ),
-        //       //         )
-        //       //     );
-        //       //   },
-        //       // ),
-        //       // SingleProduct(
-        //       //   productImage: 'http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c12c.png',
-        //       //   productName: "Fresh Guava",
-        //       //   onTap: (){
-        //       //     Navigator.of(context).push(
-        //       //       MaterialPageRoute(
-        //       //         builder:(context) => ProductOverview(
-        //       //           productImage: 'http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c12c.png',
-        //       //           productName: "Fresh Guava",
-        //       //         ),
-        //       //       ),
-        //       //     );
-        //       //   },
-        //       // ),
-        //       // SingleProduct(
-        //       //   productImage: 'https://www.searchpng.com/wp-content/uploads/2018/12/Orange-Fruit-PNG-Images.png',
-        //       //   productName: "Fresh Orange",
-        //       //   onTap: (){
-        //       //     Navigator.of(context).push(
-        //       //         MaterialPageRoute(
-        //       //           builder:(context) => ProductOverview(
-        //       //             productImage: 'https://www.searchpng.com/wp-content/uploads/2018/12/Orange-Fruit-PNG-Images.png',
-        //       //             productName: "Fresh Orange",
-        //       //           ),
-        //       //         )
-        //       //     );
-        //       //   },
-        //       // ),
-        //       // SingleProduct(
-        //       //   productImage: 'http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c12c.png',
-        //       //   productName: "Fresh Guava",
-        //       //   onTap: (){
-        //       //     Navigator.of(context).push(
-        //       //       MaterialPageRoute(
-        //       //         builder:(context) => ProductOverview(
-        //       //           productImage: 'http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c12c.png',
-        //       //           productName: "Fresh Guava",
-        //       //         ),
-        //       //       ),
-        //       //     );
-        //       //   },
-        //       // ),
-        //
-        //     ],
-        //   ),
-        // ),
       ],
     );
   }
@@ -667,83 +446,83 @@ class _HomeScreenState extends State<HomeScreen> {
             // ],
           ),
         ),
-        SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
-            children: [
-              // SingleProduct(
-              //   productImage: 'https://img2.pngio.com/basil-transparent-png-stickpng-sweet-basil-png-400_378.png',
-              //   productName: "Fresh Basli",
-              //   onTap: (){
-              //     Navigator.of(context).push(
-              //         MaterialPageRoute(
-              //           builder:(context) => ProductOverview(
-              //             productName: "Fresh Basli",
-              //             productImage: "https://img2.pngio.com/basil-transparent-png-stickpng-sweet-basil-png-400_378.png",
-              //           ),
-              //         )
-              //     );
-              //   },
-              // ),
-              // SingleProduct(
-              //   productImage: 'https://www.freepnglogos.com/uploads/broccoli-png/broccoli-organic-live-and-crops-owners-association-nigeria-26.png',
-              //   productName: "Fresh Borkli",
-              //   onTap: (){
-              //     Navigator.of(context).push(
-              //         MaterialPageRoute(
-              //           builder:(context) => ProductOverview(
-              //             productName: "Fresh Borkli",
-              //             productImage: 'https://www.freepnglogos.com/uploads/broccoli-png/broccoli-organic-live-and-crops-owners-association-nigeria-26.png',
-              //           ),
-              //         )
-              //     );
-              //   },
-              // ),
-              // SingleProduct(
-              //   productImage: 'https://freepngimg.com/thumb/categories/2972.png',
-              //   productName: "Fresh Coli-Flower",
-              //   onTap: (){
-              //     Navigator.of(context).push(
-              //         MaterialPageRoute(
-              //           builder:(context) => ProductOverview(
-              //             productImage: 'https://freepngimg.com/thumb/categories/2972.png',
-              //             productName: "Fresh Coli-Flower",
-              //           ),
-              //         )
-              //     );
-              //   },
-              // ),
-              // SingleProduct(
-              //   productImage: 'https://img2.pngio.com/basil-transparent-png-stickpng-sweet-basil-png-400_378.png',
-              //   productName: "Fresh Basli",
-              //   onTap: (){
-              //     Navigator.of(context).push(
-              //         MaterialPageRoute(
-              //           builder:(context) => ProductOverview(
-              //             productName: "Fresh Basli",
-              //             productImage: "https://img2.pngio.com/basil-transparent-png-stickpng-sweet-basil-png-400_378.png",
-              //           ),
-              //         )
-              //     );
-              //   },
-              // ),
-              // SingleProduct(
-              //   productImage: 'https://www.freepnglogos.com/uploads/broccoli-png/broccoli-organic-live-and-crops-owners-association-nigeria-26.png',
-              //   productName: "Fresh Borkli",
-              //   onTap: (){
-              //     Navigator.of(context).push(
-              //         MaterialPageRoute(
-              //           builder:(context) => ProductOverview(
-              //             productName: "Fresh Borkli",
-              //             productImage: 'https://www.freepnglogos.com/uploads/broccoli-png/broccoli-organic-live-and-crops-owners-association-nigeria-26.png',
-              //           ),
-              //         )
-              //     );
-              //   },
-              // ),
-            ],
-          ),
-        ),
+        // SingleChildScrollView(
+        //   scrollDirection: Axis.horizontal,
+        //   child: Row(
+        //     children: [
+        //       // SingleProduct(
+        //       //   productImage: 'https://img2.pngio.com/basil-transparent-png-stickpng-sweet-basil-png-400_378.png',
+        //       //   productName: "Fresh Basli",
+        //       //   onTap: (){
+        //       //     Navigator.of(context).push(
+        //       //         MaterialPageRoute(
+        //       //           builder:(context) => ProductOverview(
+        //       //             productName: "Fresh Basli",
+        //       //             productImage: "https://img2.pngio.com/basil-transparent-png-stickpng-sweet-basil-png-400_378.png",
+        //       //           ),
+        //       //         )
+        //       //     );
+        //       //   },
+        //       // ),
+        //       // SingleProduct(
+        //       //   productImage: 'https://www.freepnglogos.com/uploads/broccoli-png/broccoli-organic-live-and-crops-owners-association-nigeria-26.png',
+        //       //   productName: "Fresh Borkli",
+        //       //   onTap: (){
+        //       //     Navigator.of(context).push(
+        //       //         MaterialPageRoute(
+        //       //           builder:(context) => ProductOverview(
+        //       //             productName: "Fresh Borkli",
+        //       //             productImage: 'https://www.freepnglogos.com/uploads/broccoli-png/broccoli-organic-live-and-crops-owners-association-nigeria-26.png',
+        //       //           ),
+        //       //         )
+        //       //     );
+        //       //   },
+        //       // ),
+        //       // SingleProduct(
+        //       //   productImage: 'https://freepngimg.com/thumb/categories/2972.png',
+        //       //   productName: "Fresh Coli-Flower",
+        //       //   onTap: (){
+        //       //     Navigator.of(context).push(
+        //       //         MaterialPageRoute(
+        //       //           builder:(context) => ProductOverview(
+        //       //             productImage: 'https://freepngimg.com/thumb/categories/2972.png',
+        //       //             productName: "Fresh Coli-Flower",
+        //       //           ),
+        //       //         )
+        //       //     );
+        //       //   },
+        //       // ),
+        //       // SingleProduct(
+        //       //   productImage: 'https://img2.pngio.com/basil-transparent-png-stickpng-sweet-basil-png-400_378.png',
+        //       //   productName: "Fresh Basli",
+        //       //   onTap: (){
+        //       //     Navigator.of(context).push(
+        //       //         MaterialPageRoute(
+        //       //           builder:(context) => ProductOverview(
+        //       //             productName: "Fresh Basli",
+        //       //             productImage: "https://img2.pngio.com/basil-transparent-png-stickpng-sweet-basil-png-400_378.png",
+        //       //           ),
+        //       //         )
+        //       //     );
+        //       //   },
+        //       // ),
+        //       // SingleProduct(
+        //       //   productImage: 'https://www.freepnglogos.com/uploads/broccoli-png/broccoli-organic-live-and-crops-owners-association-nigeria-26.png',
+        //       //   productName: "Fresh Borkli",
+        //       //   onTap: (){
+        //       //     Navigator.of(context).push(
+        //       //         MaterialPageRoute(
+        //       //           builder:(context) => ProductOverview(
+        //       //             productName: "Fresh Borkli",
+        //       //             productImage: 'https://www.freepnglogos.com/uploads/broccoli-png/broccoli-organic-live-and-crops-owners-association-nigeria-26.png',
+        //       //           ),
+        //       //         )
+        //       //     );
+        //       //   },
+        //       // ),
+        //     ],
+        //   ),
+        // ),
       ],
     );
   }
